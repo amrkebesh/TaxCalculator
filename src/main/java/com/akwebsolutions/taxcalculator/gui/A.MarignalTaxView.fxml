@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="633.0" prefWidth="941.0" stylesheets="@format.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.akwebsolutions.taxcalculator.gui.TaxCalculatorController">
+	<children>
+		<FlowPane fx:id="fpTaxes" layoutX="42.0" layoutY="150.0" prefHeight="414.0" prefWidth="879.0">
+			<children>
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: S, range: $000.00 - $9,325.99 " userData="S1" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: S, range: $9,326.00 - $37,950.99 " userData="S2" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: S, range: $37,951.00 - $91,900.99 " userData="S3" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: S, range: $91,901.00 - $191,650.99 " userData="S4" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: S, range: $191,651.00 - $416,700.99 " userData="S5" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: S, range: $416,701.00 - $418,400.99 " userData="S6" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: S, range: $418,401.00 - $9,999,999.99 " userData="S7" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: MFJ, range: $000.00 - $18,650.99 " userData="MFJ1" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: MFJ, range: $18,651.00 - $75,900.99 " userData="MFJ2" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: MFJ, range: $75,901.00 - $153,100.99 " userData="MFJ3" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: MFJ, range: $153,101.00 - $233,350.99 " userData="MFJ4" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: MFJ, range: $233,351.00 - $416,700.99 " userData="MFJ5" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: MFJ, range: $416,701.00 - $470,700.99 " userData="MFJ6" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: MFJ, range: $470,701.00 - $9,999,999.99 " userData="MFJ7" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: MFS, range: $000.00 - $9,325.99 " userData="MFS1" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: MFS, range: $9,326.00 - $37,950.99 " userData="MFS2" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: MFS, range: $37,951.00 - $76,550.99 " userData="MFS3" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: MFS, range: $76,551.00 - $116,675.99 " userData="MFS4" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: MFS, range: $116,676.00 - $208,350.99 " userData="MFS5" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: MFS, range: $208,351.00 - $235,350.99 " userData="MFS6" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: MFS, range: $235,351.00 - $9,999,999.99 " userData="MFS7" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: HH, range: $000.00 - $13,350.99 " userData="HH1" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: HH, range: $13,351.00 - $50,800.99 " userData="HH2" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: HH, range: $50,801.00 - $131,200.99 " userData="HH3" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: HH, range: $131,201.00 - $212,500.99 " userData="HH4" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: HH, range: $212,501.00 - $416,700.99 " userData="HH5" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: HH, range: $416,701.00 - $444,550.99 " userData="HH6" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: HH, range: $444,501.00 - $9,999,999.99 " userData="HH7" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: QW, range: $000.00 - $18,650.99 " userData="QW1" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: QW, range: $18,651.00 - $75,900.99 " userData="QW2" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: QW, range: $75,901.00 - $153,100.99 " userData="QW3" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: QW, range: $153,101.00 - $233,350.99 " userData="QW4" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: QW, range: $233,351.00 - $416,700.99 " userData="QW5" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: QW, range: $416,701.00 - $470,700.99 " userData="QW6" wrapText="true" />
+				<Label prefHeight="56.0" prefWidth="172.0" styleClass="mgLabel" text="code: QW, range: $470,701.00 - $9,999,999.99 " userData="QW7" wrapText="true" />
+			</children>
+
+		</FlowPane>
+		<Label layoutX="335.0" layoutY="10.0" prefHeight="62.0" prefWidth="261.0" text="Marginal Tax">
+			<font>
+				<Font size="42.0" />
+			</font>
+		</Label>
+		<Label layoutX="45.0" layoutY="93.0" prefHeight="17.0" prefWidth="45.0" text="Salary" />
+		<TextField fx:id="txtSalary" layoutX="83.0" layoutY="89.0" />
+		<Button fx:id="btnCalculate" layoutX="40.0" layoutY="579.0" mnemonicParsing="false" onAction="#calculateTaxes" prefHeight="25.0" prefWidth="172.0" text="Calculate">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+		<RadioButton fx:id="rbSingle" layoutX="389.0" layoutY="88.0" mnemonicParsing="false" text="Single" userData="S">
+			<toggleGroup>
+				<ToggleGroup fx:id="tgStatus" userData="" />
+			</toggleGroup>
+		</RadioButton>
+		<RadioButton fx:id="rbQualifiedWindow" layoutX="266.0" layoutY="111.0" mnemonicParsing="false" text="Qualified Widow" toggleGroup="$tgStatus" userData="QW" />
+		<RadioButton fx:id="rbMarriedFilingSingle" layoutX="390.0" layoutY="113.0" mnemonicParsing="false" text="Married Filing Single" toggleGroup="$tgStatus" userData="MFS" />
+		<RadioButton fx:id="rbMarriedFilingJointly" layoutX="541.0" layoutY="91.0" mnemonicParsing="false" text="Married Filing Jointly" toggleGroup="$tgStatus" userData="MFJ" />
+		<RadioButton fx:id="rbHHH" layoutX="541.0" layoutY="112.0" mnemonicParsing="false" text="Head of House Hold" toggleGroup="$tgStatus" userData="HH" />
+		<RadioButton fx:id="rbAll" layoutX="265.0" layoutY="86.0" mnemonicParsing="false" selected="true" text="All" toggleGroup="$tgStatus" userData="All" />
+		<ImageView fitHeight="56.0" fitWidth="116.0" layoutX="599.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@money-bag.png" />
+			</image>
+		</ImageView>
+	</children>
+</AnchorPane>
